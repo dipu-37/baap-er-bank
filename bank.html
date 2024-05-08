@@ -19,7 +19,7 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white ">
                 <div class="bg-green-400 p-8 rounded-lg">
                     <h4 class="text-3xl">Doposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2  class="text-5xl">$<span id="deposit_tottal">00</span></h2>
                 </div>
                 <div class="bg-yellow-500 p-8 rounded-lg">
                     <h4 class="text-3xl">Withdraw</h4>
@@ -37,9 +37,9 @@
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white ">
                 <div class="bg-fuchsia-400 p-8 rounded-lg">
                     <h4 class="text-3xl">Please Doposit</h4>
-                    <input type="text" placeholder="$ Amount you want to deposit" class="input input-bordered w-full max-w-xs mt-3 block text-black" id="button_diposit" />
+                    <input type="text" placeholder="$ Amount you want to deposit" class="input input-bordered w-full max-w-xs mt-3 block text-black" id="diposit_field" />
 
-                    <button id="button_submit_bank" class="btn btn-warning mt-4 text-white rounded-lg">Submit</button>
+                    <button id="buttondiposit" class="btn btn-warning mt-4 text-white rounded-lg">Submit</button>
                     
                 </div>
                 <div class="bg-sky-400 p-8 rounded-lg">
@@ -54,5 +54,9 @@
             </div>
         </section>
     </main>
+
+
+
+    <script src="./js/deposit.js"></script>
 </body>
 </html>
