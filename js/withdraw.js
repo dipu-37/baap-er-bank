@@ -10,6 +10,19 @@ document.getElementById('withdraw_button_submit').addEventListener('click',funct
      const withdraw_total_num = parseFloat(withdrawtotal_string);
      console.log(withdraw_total_num);
 
+//  get balance total 
+const balance = document.getElementById('balance_total');
+const previousbalancestring = balance.innerText;
+
+const priviousbalance = parseFloat(previousbalancestring);
+console.log(priviousbalance) 
+
+// withdraw balance is greater than main balance 
+if(inputfieldvalue > priviousbalance){
+    alert('baap ar bank a ato taka nai');
+    return;
+ }
+
      const current_withdraw = inputfieldvalue + withdraw_total_num;
      console.log(current_withdraw)
 
@@ -17,13 +30,10 @@ document.getElementById('withdraw_button_submit').addEventListener('click',funct
 
      inputfiel.value =''
 
-    //  get balance total 
-     const balance = document.getElementById('balance_total');
-const previousbalancestring = balance.innerText;
-
-const priviousbalance = parseFloat(previousbalancestring);
-console.log(priviousbalance) 
+    
 const current_balcancr = priviousbalance - inputfieldvalue;
 balance.innerText = current_balcancr;
+
+
 
 })

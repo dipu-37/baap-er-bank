@@ -17,7 +17,7 @@ document.getElementById('buttondiposit').addEventListener('click', function(){
 
     // sum to new and previous 
     const currentDepositTotal = newdepositamount + previous_deposittotal;
-    deposittotalelement.innerText = currentDepositTotal
+    deposittotalelement.innerText = currentDepositTotal ;
 
     // get ballence total  
 
